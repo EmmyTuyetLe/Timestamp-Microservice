@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 
 
 // your first API endpoint... 
-app.get("/api/date/:timestamp",(req, res) => {
+app.get("/api/:date?",(req, res) => {
   let timestamp = req.params.timestamp;
   let date = new Date(timestamp);
   if(!timestamp.match(/-/g)) {
